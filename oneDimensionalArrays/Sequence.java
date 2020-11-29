@@ -21,8 +21,4 @@ class Sequence {
         }
         return replacements;
     }
-
-    //public int replacement() {
-        //return replacements;
-    //}
 }

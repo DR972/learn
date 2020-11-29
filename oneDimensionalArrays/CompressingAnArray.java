@@ -7,10 +7,9 @@ class CompressingAnArray {
         this.arr = arr;
     }
 
-    public int[] compressing() {
+    public void compressing() {
         for (int i=1; i<arr.length; i+= 2) {
             arr[i] = 0;
         }
-        return arr;
     }
 }
