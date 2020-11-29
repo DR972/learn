@@ -45,13 +45,13 @@ public class Main {
 
         Sequence sequence = new Sequence(arr, z, newNumber);
         System.out.println("\n\nВсе члены, большие " + z + ", меняем на число: " + newNumber);
-        double [] changeArr = sequence.searchSequence();
+        sequence.searchSequence();
         System.out.println("\nПолучилась новая последовательность:");
         for (int i=0; i< arr.length; i++) {
             if ((i % 6) == 0)  System.out.println();
-            System.out.print(changeArr[i] + "\t\t");
+            System.out.print(arr[i] + "\t\t");
         }
-        System.out.println("\n\nМы сделали " + sequence.replacement() + " замен.");
+        System.out.println("\n\nМы сделали " + sequence.searchSequence() + " замен.");
     }
 
     public static void amountOfElements() {
@@ -81,11 +81,11 @@ public class Main {
         }
 
         ChangeMaxMin changeMaxMin = new ChangeMaxMin(arr);
-        double[] changeArr = changeMaxMin.replacement();
+        changeMaxMin.replacement();
         System.out.println("\n\nМеняем местами наибольшее из них с наименьшим:");
-        for (int i=0; i< changeArr.length; i++) {
+        for (int i=0; i< arr.length; i++) {
             if ((i % 6) == 0) System.out.println();
-            System.out.print(changeArr[i] + "\t\t");
+            System.out.print(arr[i] + "\t\t");
         }
     }
 
@@ -180,10 +180,10 @@ public class Main {
 
         CompressingAnArray compressingAnArray = new CompressingAnArray(arr);
         System.out.println("\nПосле сжатия и замены получили такой массив: ");
-        int[] newArr = compressingAnArray.compressing();
-        for (int i=0; i< newArr.length; i++) {
+        compressingAnArray.compressing();
+        for (int i=0; i< arr.length; i++) {
             if ((i % 30) == 0) System.out.println();
-            System.out.print(newArr[i] + "\t");
+            System.out.print(arr[i] + "\t");
         }
     }
 }

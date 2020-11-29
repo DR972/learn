@@ -12,17 +12,17 @@ class Sequence {
         this.newNumber = newNumber;
     }
 
-    public double[] searchSequence() {
+    public int searchSequence() {
         for (int j=0; j<arr.length; j++) {
             if (arr[j] > z) {
                 arr[j] = newNumber;
                 replacements ++;
             }
         }
-        return arr;
-    }
-
-    public int replacement() {
         return replacements;
     }
+
+    //public int replacement() {
+        //return replacements;
+    //}
 }
