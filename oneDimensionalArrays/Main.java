@@ -3,16 +3,16 @@ package by.epam.learn.main;
 public class Main {
 
     public static void main(String[] args) {
-        //doMultiples();
-        //makingSequence();
-        //amountOfElements();
+        doMultiples();
+        makingSequence();
+        amountOfElements();
         resultMaxMin();
-        //resultNumberAndIndex();
-        //resultSumIntegersIndeces();
-        //resultMaxAmount();
-        //resultSequenceMinusMin();
-        //resultFrequentNumber();
-        //resultCompressingAnArray();
+        resultNumberAndIndex();
+        resultSumIntegersIndeces();
+        resultMaxAmount();
+        resultSequenceMinusMin();
+        resultFrequentNumber();
+        resultCompressingAnArray();
     }
 
     private static void doMultiples() {
