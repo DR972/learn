@@ -7,12 +7,13 @@ class ChangeMaxMin {
         this.arr = arr;
     }
 
-    public void replacement() {
+    public double[] replacement() {
+        double[] newArr = arr;
         double min = 0;
         double max = 0;
         int indexMin = 0;
         int indexMax = 0;
-        for (int i=0; i<arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (arr[i] < min) {
                 min = arr[i];
                 indexMin = i;
@@ -22,7 +23,8 @@ class ChangeMaxMin {
                 indexMax = i;
             }
         }
-        arr[indexMax] = min;
-        arr[indexMin] = max;
+        newArr[indexMax] = min;
+        newArr[indexMin] = max;
+        return newArr;
     }
 }

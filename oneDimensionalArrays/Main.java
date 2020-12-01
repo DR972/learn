@@ -3,16 +3,16 @@ package by.epam.learn.main;
 public class Main {
 
     public static void main(String[] args) {
-        doMultiples();
-        makingSequence();
-        amountOfElements();
+        //doMultiples();
+        //makingSequence();
+        //amountOfElements();
         resultMaxMin();
-        resultNumberAndIndex();
-        resultSumIntegersIndeces();
-        resultMaxAmount();
-        resultSequenceMinusMin();
-        resultFrequentNumber();
-        resultCompressingAnArray();
+        //resultNumberAndIndex();
+        //resultSumIntegersIndeces();
+        //resultMaxAmount();
+        //resultSequenceMinusMin();
+        //resultFrequentNumber();
+        //resultCompressingAnArray();
     }
 
     private static void doMultiples() {
@@ -47,11 +47,12 @@ public class Main {
         System.out.println("\n\nВсе члены, большие " + z + ", меняем на число: " + newNumber);
         sequence.searchSequence();
         System.out.println("\nПолучилась новая последовательность:");
-        for (int i=0; i< arr.length; i++) {
+        double[] newArr = sequence.searchSequence();
+        for (int i=0; i< newArr.length; i++) {
             if ((i % 6) == 0)  System.out.println();
-            System.out.print(arr[i] + "\t\t");
+            System.out.print(newArr[i] + "\t\t");
         }
-        System.out.println("\n\nМы сделали " + sequence.searchSequence() + " замен.");
+        System.out.println("\n\nМы сделали " + sequence.replacements() + " замен.");
     }
 
     public static void amountOfElements() {
@@ -81,11 +82,11 @@ public class Main {
         }
 
         ChangeMaxMin changeMaxMin = new ChangeMaxMin(arr);
-        changeMaxMin.replacement();
         System.out.println("\n\nМеняем местами наибольшее из них с наименьшим:");
-        for (int i=0; i< arr.length; i++) {
+        double[] newArr = changeMaxMin.replacement();
+        for (int i=0; i< newArr.length; i++) {
             if ((i % 6) == 0) System.out.println();
-            System.out.print(arr[i] + "\t\t");
+            System.out.print(newArr[i] + "\t\t");
         }
     }
 
