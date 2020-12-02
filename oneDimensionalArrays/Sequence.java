@@ -13,12 +13,12 @@ class Sequence {
     }
 
     public double[] searchSequence() {
-        double[] newArr = arr;
+        double[] newArr = new double[arr.length];
         for (int j = 0; j < arr.length; j++) {
             if (arr[j] > z) {
                 newArr[j] = newNumber;
                 replacements++;
-            }
+            } else newArr[j] = arr[j];
         }
         return newArr;
     }
