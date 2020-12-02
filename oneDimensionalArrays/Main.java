@@ -22,7 +22,7 @@ public class Main {
         int[] arr = new int[n];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * n);
-            if ((i % 30) == 0)  System.out.println();
+            if ((i % 30) == 0) System.out.println();
             System.out.print(arr[i] + "\t");
         }
 
@@ -32,12 +32,12 @@ public class Main {
     }
 
     private static void makingSequence() {
-        int n = (int) (Math.random()*100);
-        int z = (int) (Math.random()*20);
-        double newNumber = Math.random()*5;
+        int n = (int) (Math.random() * 50);
+        int z = (int) (Math.random() * 20);
+        double newNumber = Math.random() * 5;
         System.out.println("\nЗадание 2. Имеется последовательность из " + n + " действительных чисел:");
         double[] arr = new double[n];
-        for (int i=0; i< arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = Math.random() * n;
             if ((i % 6) == 0) System.out.println();
             System.out.print(arr[i] + "\t\t");
@@ -45,22 +45,21 @@ public class Main {
 
         Sequence sequence = new Sequence(arr, z, newNumber);
         System.out.println("\n\nВсе члены, большие " + z + ", меняем на число: " + newNumber);
-        sequence.searchSequence();
         System.out.println("\nПолучилась новая последовательность:");
         double[] newArr = sequence.searchSequence();
-        for (int i=0; i< newArr.length; i++) {
-            if ((i % 6) == 0)  System.out.println();
+        for (int i = 0; i < newArr.length; i++) {
+            if ((i % 6) == 0) System.out.println();
             System.out.print(newArr[i] + "\t\t");
         }
         System.out.println("\n\nМы сделали " + sequence.replacements() + " замен.");
     }
 
     public static void amountOfElements() {
-        int n = (int) (Math.random()*100);
+        int n = (int) (Math.random() * 50);
         System.out.println("\nЗадание 3. Дан массив из " + n + " действительных чисел:");
         double[] arr = new double[n];
-        for (int i=0; i< arr.length; i++) {
-            arr[i] = Math.random() * n - (double) n/2;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Math.random() * n - (double) n / 2;
             if ((i % 6) == 0) System.out.println();
             System.out.print(arr[i] + "\t\t");
         }
@@ -68,15 +67,15 @@ public class Main {
         PlusMinusZero plusMinusZero = new PlusMinusZero(arr);
         System.out.println("\nВ нем отрицательных элементов:\t" + plusMinusZero.minus());
         System.out.println("положительных:\t" + plusMinusZero.plus());
-        System.out.println("нулевых:\t" + (2*n - plusMinusZero.minus() - plusMinusZero.plus()));
-        }
+        System.out.println("нулевых:\t" + (2 * n - plusMinusZero.minus() - plusMinusZero.plus()));
+    }
 
     public static void resultMaxMin() {
-        int n = (int) (Math.random()*100+1);
+        int n = (int) (Math.random() * 50);
         System.out.println("\nЗадание 4. Дано " + n + " действительных чисел:");
         double[] arr = new double[n];
-        for (int i=0; i< arr.length; i++) {
-            arr[i] = Math.random() * n - (double) n/2;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Math.random() * n * 2 - (double) n;
             if ((i % 6) == 0) System.out.println();
             System.out.print(arr[i] + "\t\t");
         }
@@ -84,17 +83,17 @@ public class Main {
         ChangeMaxMin changeMaxMin = new ChangeMaxMin(arr);
         System.out.println("\n\nМеняем местами наибольшее из них с наименьшим:");
         double[] newArr = changeMaxMin.replacement();
-        for (int i=0; i< newArr.length; i++) {
+        for (int i = 0; i < newArr.length; i++) {
             if ((i % 6) == 0) System.out.println();
             System.out.print(newArr[i] + "\t\t");
         }
     }
 
     public static void resultNumberAndIndex() {
-        int n = (int) (Math.random()*100+1);
+        int n = (int) (Math.random() * 50 + 1);
         System.out.println("\n\nЗадание 5. Дано " + n + " целых чисел:");
         int[] arr = new int[n];
-        for (int i=0; i< arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * n);
             if ((i % 30) == 0) System.out.println();
             System.out.print(arr[i] + "\t");
@@ -106,11 +105,11 @@ public class Main {
     }
 
     public static void resultSumIntegersIndeces() {
-        int n = (int) (Math.random()*100+1);
+        int n = (int) (Math.random() * 50 + 1);
         System.out.println("\n\nЗадание 6. Дано " + n + " действительных чисел:");
         double[] arr = new double[n];
-        for (int i=0; i< arr.length; i++) {
-            arr[i] =  (Math.random() * n - (double) n/2);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (Math.random() * n *2- (double) n);
             if ((i % 6) == 0) System.out.println();
             System.out.print(arr[i] + "\t\t");
         }
@@ -121,11 +120,11 @@ public class Main {
     }
 
     public static void resultMaxAmount() {
-        int n = ((int) (Math.random()*50 + 1)) * 2;
+        int n = ((int) (Math.random() * 50 + 1)) * 2;
         System.out.println("\n\nЗадание 7. Дано " + n + " действительных чисел:");
         double[] arr = new double[n];
-        for (int i=0; i<arr.length; i++) {
-            arr[i] = (Math.random() * n - (double) n/2);
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (Math.random() * n*2 - (double) n);
             if ((i % 6) == 0) System.out.println();
             System.out.print(arr[i] + "\t\t");
         }
@@ -136,30 +135,30 @@ public class Main {
     }
 
     public static void resultSequenceMinusMin() {
-        int n = (int) (Math.random()*100+1);
+        int n = (int) (Math.random() * 50 + 1);
         System.out.println("\n\nЗадание 8. Дана последовательность " + n + " целых чисел:");
         int[] arr = new int[n];
-        for (int i=0; i< arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * n);
             if ((i % 30) == 0) System.out.println();
             System.out.print(arr[i] + "\t");
         }
 
-        SequenceMinusMin sequenceMinusMin = new SequenceMinusMin(arr,n);
+        SequenceMinusMin sequenceMinusMin = new SequenceMinusMin(arr, n);
         sequenceMinusMin.searchForMinimumMembers();
         int[] minusArr = sequenceMinusMin.sequenceMinus();
         System.out.println("\nПосле удаления минимальных членов образовалась новая последовательность:");
-        for (int i=0; i< minusArr.length; i++) {
+        for (int i = 0; i < minusArr.length; i++) {
             if ((i % 30) == 0) System.out.println();
             System.out.print(minusArr[i] + "\t");
         }
     }
 
     public static void resultFrequentNumber() {
-        int n = (int) (Math.random()*100+1);
+        int n = (int) (Math.random() * 100 + 1);
         System.out.println("\n\nЗадание 9. Дан массив " + n + " целых чисел:");
         int[] arr = new int[n];
-        for (int i=0; i< arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * n);
             if ((i % 30) == 0) System.out.println();
             System.out.print(arr[i] + "\t");
@@ -170,10 +169,10 @@ public class Main {
     }
 
     public static void resultCompressingAnArray() {
-        int n = (int) (Math.random()*100+1);
+        int n = (int) (Math.random() * 100 + 1);
         System.out.println("\n\nЗадание 10. Дан массив " + n + " целых чисел:");
         int[] arr = new int[n];
-        for (int i=0; i< arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * n);
             if ((i % 30) == 0) System.out.println();
             System.out.print(arr[i] + "\t");
@@ -182,7 +181,7 @@ public class Main {
         CompressingAnArray compressingAnArray = new CompressingAnArray(arr);
         System.out.println("\nПосле сжатия и замены получили такой массив: ");
         compressingAnArray.compressing();
-        for (int i=0; i< arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if ((i % 30) == 0) System.out.println();
             System.out.print(arr[i] + "\t");
         }
