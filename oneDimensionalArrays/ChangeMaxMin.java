@@ -8,20 +8,22 @@ class ChangeMaxMin {
     }
 
     public double[] replacement() {
-        double[] newArr = arr;
-        double min = 0;
-        double max = 0;
+        double[] newArr = new double[arr.length];
+        double min = arr[0];
+        double max = arr[0];
         int indexMin = 0;
         int indexMax = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
+            newArr[i] = arr[i];
+            if (newArr[i] < min) {
+                min = newArr[i];
                 indexMin = i;
             }
-            if (arr[i] > max) {
-                max = arr[i];
+            if (newArr[i] > max) {
+                max = newArr[i];
                 indexMax = i;
             }
+
         }
         newArr[indexMax] = min;
         newArr[indexMin] = max;
