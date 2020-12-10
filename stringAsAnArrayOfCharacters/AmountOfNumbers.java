@@ -13,6 +13,7 @@ class AmountOfNumbers {
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) >= 48 && str.charAt(i) <= 57) {
                 countDigits++;
+                if (i == str.length() - 1) countNumbers++;
             } else {
                 if (countDigits > 0) {
                     countNumbers++;
@@ -20,6 +21,7 @@ class AmountOfNumbers {
                 }
             }
         }
+
         return countNumbers;
     }
 }
