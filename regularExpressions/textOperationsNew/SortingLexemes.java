@@ -6,7 +6,7 @@ public class SortingLexemes extends Splitting {
 
     public SortingLexemes(String text, char letter) {
         this.letter = letter;
-        paragraphs = splitParagraphs(text);
+        this.paragraphs = splitParagraphs(text);
     }
 
     public int countLetters(String word) {

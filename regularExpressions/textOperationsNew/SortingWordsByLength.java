@@ -4,7 +4,7 @@ public class SortingWordsByLength extends Splitting {
     private final String[] paragraphs;
 
     public SortingWordsByLength(String text) {
-        paragraphs = splitParagraphs(text);
+        this.paragraphs = splitParagraphs(text);
     }
 
     public StringBuilder sortWords(String[] words) {

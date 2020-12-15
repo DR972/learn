@@ -5,7 +5,7 @@ public class SortingParagraphs extends Splitting {
     private final String[] paragraphs;
 
     public SortingParagraphs(String text) {
-        paragraphs = splitParagraphs(text);
+        this.paragraphs = splitParagraphs(text);
     }
 
     public int[] sortSentences() {
