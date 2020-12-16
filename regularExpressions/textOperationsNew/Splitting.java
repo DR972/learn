@@ -1,6 +1,6 @@
 package by.epam.learn.main;
 
-public class Splitting {
+public abstract class Splitting {
 
     public String[] splitParagraphs(String text) {
         return text.split("\n");
