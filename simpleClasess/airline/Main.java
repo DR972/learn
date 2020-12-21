@@ -32,8 +32,8 @@ public class Main {
 
     private static void printResult(ArrayList<AirLine> flights) {
         System.out.println("available flights from \"" + airportName + "\":");
-        System.out.printf("%11s%25s%17s%19s%21s\n",
-                "flyingTo", "flightNumber", "aircraft", "checkIn", "dayOfWeek");
+        System.out.printf("%11s%25s%17s%20s%19s\n",
+                "flyingTo", "flightNumber", "aircraft", "departure", "dayOfWeek");
         System.out.println("-----------------------------------------------------------------" +
                 "------------------------------------------");
         if (flights.size() == 0) {
