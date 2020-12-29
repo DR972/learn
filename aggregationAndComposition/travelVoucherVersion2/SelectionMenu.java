@@ -3,14 +3,14 @@ package by.epam.learn.main.modul4.aggregationAndComposition;
 import java.util.Scanner;
 
 public class SelectionMenu {
-    private static int SELECTION_LEVEL = 1;
-    private static TypeOfTravel TYPE_OF_TRAVEL;
-    private static TypeOfTransport TYPE_OF_TRANSPORT;
-    private static TypeOfFood TYPE_OF_FOOD;
-    private static int MIN_DAYS;
-    private static int MAX_DAYS;
-    private static int MIN_PRICE;
-    private static int MAX_PRICE;
+    private static int selectionLevel = 1;
+    private static TypeOfTravel typeOfTravel;
+    private static TypeOfTransport typeOfTransport;
+    private static TypeOfFood typeOfFood;
+    private static int minDays;
+    private static int maxDays;
+    private static int minPrice;
+    private static int maxPrice;
 
     public static void select() {
         System.out.println("\nПривет, дружище! Я уже вам завидую , отдыхать это классно. Начнем с типа путешествия.");
@@ -26,7 +26,7 @@ public class SelectionMenu {
                 }
                 choice = in.nextInt();
             } while (!isvalid(choice));
-            switch (SELECTION_LEVEL) {
+            switch (selectionLevel) {
                 case 1:
                     selectByTypeOfTravel(choice);
                     break;
@@ -43,7 +43,7 @@ public class SelectionMenu {
                     selectByPrice(choice);
                     break;
             }
-            if (SELECTION_LEVEL > 5) {
+            if (selectionLevel > 5) {
                 System.out.println("\nНадеюсь вы нашли, что хотели.");
                 break;
             }
@@ -57,50 +57,50 @@ public class SelectionMenu {
     static void selectByTypeOfTravel(int choice) {
         switch (choice) {
             case 0:
-                TYPE_OF_TRAVEL = null;
+                typeOfTravel = null;
                 break;
             case 1:
-                TYPE_OF_TRAVEL = TypeOfTravel.RECREATION;
+                typeOfTravel = TypeOfTravel.RECREATION;
                 break;
             case 2:
-                TYPE_OF_TRAVEL = TypeOfTravel.EXCURSION;
+                typeOfTravel = TypeOfTravel.EXCURSION;
                 break;
             case 3:
-                TYPE_OF_TRAVEL = TypeOfTravel.TREATMENT;
+                typeOfTravel = TypeOfTravel.TREATMENT;
                 break;
             case 4:
-                TYPE_OF_TRAVEL = TypeOfTravel.SHOPPING;
+                typeOfTravel = TypeOfTravel.SHOPPING;
                 break;
             case 5:
-                TYPE_OF_TRAVEL = TypeOfTravel.CRUISE;
+                typeOfTravel = TypeOfTravel.CRUISE;
                 break;
         }
-        SELECTION_LEVEL++;
+        selectionLevel++;
         System.out.println("0. все варианты;\n1. самолет;\n2. автобус;\n3. поезд;\n4. пароход;\n5. самостоятельно.");
     }
 
     static void selectByTypeOfTransport(int choice) {
         switch (choice) {
             case 0:
-                TYPE_OF_TRANSPORT = null;
+                typeOfTransport = null;
                 break;
             case 1:
-                TYPE_OF_TRANSPORT = TypeOfTransport.PLANE;
+                typeOfTransport = TypeOfTransport.PLANE;
                 break;
             case 2:
-                TYPE_OF_TRANSPORT = TypeOfTransport.BUS;
+                typeOfTransport = TypeOfTransport.BUS;
                 break;
             case 3:
-                TYPE_OF_TRANSPORT = TypeOfTransport.TRAIN;
+                typeOfTransport = TypeOfTransport.TRAIN;
                 break;
             case 4:
-                TYPE_OF_TRANSPORT = TypeOfTransport.SHIP;
+                typeOfTransport = TypeOfTransport.SHIP;
                 break;
             case 5:
-                TYPE_OF_TRANSPORT = TypeOfTransport.WITHOUT_TRANSPORT;
+                typeOfTransport = TypeOfTransport.WITHOUT_TRANSPORT;
                 break;
         }
-        SELECTION_LEVEL++;
+        selectionLevel++;
         System.out.println("0. все варианты;\n1. все включено;\n2. полный пансион;\n3. завтрак и ужин;\n" +
                 "4. завтрак;\n5. без питания.");
     }
@@ -108,89 +108,89 @@ public class SelectionMenu {
     static void selectByTypeOfFood(int choice) {
         switch (choice) {
             case 0:
-                TYPE_OF_FOOD = null;
+                typeOfFood = null;
                 break;
             case 1:
-                TYPE_OF_FOOD = TypeOfFood.ALL_INCLUSIVE;
+                typeOfFood = TypeOfFood.ALL_INCLUSIVE;
                 break;
             case 2:
-                TYPE_OF_FOOD = TypeOfFood.FULL_BOARD;
+                typeOfFood = TypeOfFood.FULL_BOARD;
                 break;
             case 3:
-                TYPE_OF_FOOD = TypeOfFood.HALF_BOARD;
+                typeOfFood = TypeOfFood.HALF_BOARD;
                 break;
             case 4:
-                TYPE_OF_FOOD = TypeOfFood.BREAKFAST;
+                typeOfFood = TypeOfFood.BREAKFAST;
                 break;
             case 5:
-                TYPE_OF_FOOD = TypeOfFood.WITHOUT_FOOD;
+                typeOfFood = TypeOfFood.WITHOUT_FOOD;
                 break;
         }
         System.out.println("0. все варианты;\n1. до 5 дней;\n2. 6 - 10 дней;\n3. 11 - 15 дней;\n4. 16 - 20 дней;" +
                 "\n5. более 20 дней.");
-        SELECTION_LEVEL++;
+        selectionLevel++;
     }
 
     static void selectByNumberOfDays(int choice) {
         switch (choice) {
             case 0:
-                MIN_DAYS = 0;
-                MAX_DAYS = 100;
+                minDays = 0;
+                maxDays = 100;
                 break;
             case 1:
-                MIN_DAYS = 0;
-                MAX_DAYS = 5;
+                minDays = 0;
+                maxDays = 5;
                 break;
             case 2:
-                MIN_DAYS = 5;
-                MAX_DAYS = 10;
+                minDays = 5;
+                maxDays = 10;
                 break;
             case 3:
-                MIN_DAYS = 10;
-                MAX_DAYS = 15;
+                minDays = 10;
+                maxDays = 15;
                 break;
             case 4:
-                MIN_DAYS = 15;
-                MAX_DAYS = 20;
+                minDays = 15;
+                maxDays = 20;
                 break;
             case 5:
-                MIN_DAYS = 20;
-                MAX_DAYS = 100;
+                minDays = 20;
+                maxDays = 100;
                 break;
         }
         System.out.println("0. все варианты;\n1. до 500;\n2. 501 - 1000;\n3. 1001 - 1500;\n4. 1501 - 2000;" +
                 "\n5. больше 2000.");
-        SELECTION_LEVEL++;
+        selectionLevel++;
     }
 
     static void selectByPrice(int choice) {
         switch (choice) {
             case 0:
-                MIN_PRICE = 0;
-                MAX_PRICE = 1000000;
+                minPrice = 0;
+                maxPrice = 1000000;
                 break;
             case 1:
-                MIN_PRICE = 0;
-                MAX_PRICE = 500;
+                minPrice = 0;
+                maxPrice = 500;
                 break;
             case 2:
-                MIN_PRICE = 500;
-                MAX_PRICE = 1000;
+                minPrice = 500;
+                maxPrice = 1000;
                 break;
             case 3:
-                MIN_PRICE = 1000;
-                MAX_PRICE = 1500;
+                minPrice = 1000;
+                maxPrice = 1500;
                 break;
             case 4:
-                MIN_PRICE = 1500;
-                MAX_PRICE = 2000;
+                minPrice = 1500;
+                maxPrice = 2000;
                 break;
             case 5:
-                MIN_PRICE = 2000;
-                MAX_PRICE = 1000000;
+                minPrice = 2000;
+                maxPrice = 1000000;
                 break;
         }
-        SELECTION_LEVEL++;
-        Main.findSort(TYPE_OF_TRAVEL, TYPE_OF_TRANSPORT, TYPE_OF_FOOD, MIN_DAYS, MAX_DAYS, MIN_PRICE, MAX_PRICE);
+        selectionLevel++;
+        Main.findSort(typeOfTravel, typeOfTransport, typeOfFood, minDays, maxDays, minPrice, maxPrice);
     }
 }

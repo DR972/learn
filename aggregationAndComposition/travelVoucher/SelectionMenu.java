@@ -3,7 +3,7 @@ package by.epam.learn.main.modul4.aggregationAndComposition;
 import java.util.Scanner;
 
 public class SelectionMenu {
-    private static int SELECTION_LEVEL = 0;
+    private static int selectionLevel = 0;
 
     public static void select() {
         System.out.println("\nПривет, дружище! Я уже вам завидую , отдыхать это классно. Как будем выбирать?");
@@ -20,7 +20,7 @@ public class SelectionMenu {
                 }
                 choice = in.nextInt();
             } while (!isvalid(choice));
-            switch (SELECTION_LEVEL) {
+            switch (selectionLevel) {
                 case 0: selectOn(choice);
                     break;
                 case 1: selectByTypeOfTravel(choice);
@@ -34,12 +34,12 @@ public class SelectionMenu {
                 case 5: selectByPrice(choice);
                     break;
             }
-            if (choice == 0 && SELECTION_LEVEL == 0) {
+            if (choice == 0 && selectionLevel == 0) {
                 System.out.println("\nНадеюсь вы нашли, что хотели.");
                 break;
             }
             if (choice == 0) {
-                SELECTION_LEVEL = 0;
+                selectionLevel = 0;
                 showMenu(0);
             }
         }
@@ -61,23 +61,23 @@ public class SelectionMenu {
         switch (choice) {
             case 1:
                 System.out.println("1. море и пляж;\n2. экскурсии;\n3. лечение;\n4. шоппинг;\n5. круиз.");
-                SELECTION_LEVEL = 1;
+                selectionLevel = 1;
                 return;
             case 2:
                 System.out.println("1. самолет;\n2. автобус;\n3. поезд;\n4. пароход;\n5. самостоятельно.");
-                SELECTION_LEVEL = 2;
+                selectionLevel = 2;
                 return;
             case 3:
                 System.out.println("1. все включено;\n2. полный пансион;\n3. завтрак и ужин;\n4. завтрак;\n5. без питания.");
-                SELECTION_LEVEL = 3;
+                selectionLevel = 3;
                 return;
             case 4:
                 System.out.println("1. до 5 дней;\n2. 5 - 10 дней;\n3. 10 - 15 дней;\n4. 15 - 20 дней;\n5. более 20 дней.");
-                SELECTION_LEVEL = 4;
+                selectionLevel = 4;
                 return;
             case 5:
                 System.out.println("1. до 500;\n2. 500 - 1000;\n3. 1000 - 1500;\n4. 1500 - 2000;\n5. больше 2000.");
-                SELECTION_LEVEL = 5;
+                selectionLevel = 5;
         }
     }
 

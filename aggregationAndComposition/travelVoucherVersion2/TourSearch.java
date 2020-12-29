@@ -6,10 +6,10 @@ public class TourSearch {
     private final String nameOfTravelAgency;
     private final ArrayList<TourPackage> tourPackages;
 
-    private static ArrayList<TourPackage> PACKAGE_OF_TRAVEL = new ArrayList<>();
-    private static ArrayList<TourPackage> PACKAGE_OF_TRANSPORT = new ArrayList<>();
-    private static ArrayList<TourPackage> PACKAGE_OF_FOOD = new ArrayList<>();
-    private static final ArrayList<TourPackage> PACKAGE_OF_Days = new ArrayList<>();
+    private static ArrayList<TourPackage> packageOfTravel = new ArrayList<>();
+    private static ArrayList<TourPackage> packageOfTransport = new ArrayList<>();
+    private static ArrayList<TourPackage> packageOfFood = new ArrayList<>();
+    private static final ArrayList<TourPackage> packageOfDays = new ArrayList<>();
 
     public TourSearch(String nameOfTravelAgency, ArrayList<TourPackage> tourPackages) {
         this.nameOfTravelAgency = nameOfTravelAgency;
@@ -27,44 +27,44 @@ public class TourSearch {
             for (TourPackage tours : this.tourPackages) {
                 for (TypeOfTravel types : tours.getType()) {
                     if (type == types) {
-                        PACKAGE_OF_TRAVEL.add(tours);
+                        packageOfTravel.add(tours);
                     }
                 }
             }
-        } else PACKAGE_OF_TRAVEL = this.tourPackages;
+        } else packageOfTravel = this.tourPackages;
     }
 
     public static void sortByTypeOfTransport(TypeOfTransport transport) {
         if (transport != null) {
-            for (TourPackage tours : PACKAGE_OF_TRAVEL) {
+            for (TourPackage tours : packageOfTravel) {
                 if (transport == tours.getTransport()) {
-                    PACKAGE_OF_TRANSPORT.add(tours);
+                    packageOfTransport.add(tours);
                 }
             }
-        } else PACKAGE_OF_TRANSPORT = PACKAGE_OF_TRAVEL;
+        } else packageOfTransport = packageOfTravel;
     }
 
     public static void sortByTypeOfFood(TypeOfFood food) {
         if (food != null) {
-            for (TourPackage tours : PACKAGE_OF_TRANSPORT) {
+            for (TourPackage tours : packageOfTransport) {
                 if (food == tours.getFood()) {
-                    PACKAGE_OF_FOOD.add(tours);
+                    packageOfFood.add(tours);
                 }
             }
-        } else PACKAGE_OF_FOOD = PACKAGE_OF_TRANSPORT;
+        } else packageOfFood = packageOfTransport;
     }
 
     public static void sortByNumberOfDays(int minDay, int maxDay) {
-        for (TourPackage tours : PACKAGE_OF_FOOD) {
+        for (TourPackage tours : packageOfFood) {
             if (tours.getNumberOfDays() > minDay && tours.getNumberOfDays() <= maxDay) {
-                PACKAGE_OF_Days.add(tours);
+                packageOfDays.add(tours);
             }
         }
     }
 
     ArrayList<TourPackage> sortByPrice(int minPrice, int maxPrice) {
         ArrayList<TourPackage> tourPackages = new ArrayList<>();
-        for (TourPackage tours : PACKAGE_OF_Days) {
+        for (TourPackage tours : packageOfDays) {
             if (tours.getPrice() > minPrice && tours.getPrice() < maxPrice) {
                 tourPackages.add(tours);
             }
