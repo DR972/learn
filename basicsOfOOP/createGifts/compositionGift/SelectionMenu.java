@@ -38,13 +38,13 @@ public class SelectionMenu {
     public static Box selectBox() {
         System.out.println("\nLet's start with packaging:");
         Arrays.asList(Box.values()).forEach(box -> System.out.println((box.ordinal() + 1) + ". " + box + ". "));
-        return Box.byOrdinal(select(3));
+        return Box.byOrdinal(select(Box.values().length));
     }
 
     public static Chocolate selectChocolate() {
         System.out.println("\nSelect chocolate bars:");
         Arrays.asList(Chocolate.values()).forEach(ch -> System.out.println((ch.ordinal() + 1) + ". " + ch + ". "));
-        return Chocolate.byOrdinal(select(5));
+        return Chocolate.byOrdinal(select(Chocolate.values().length));
     }
 
     public static ArrayList<Candy> addCandy() {
@@ -76,9 +76,8 @@ public class SelectionMenu {
     private static void selectCandy() {
         System.out.println("\nChoosing a candies:");
         Arrays.asList(Candy.values()).forEach(candy -> System.out.print((candy.ordinal() + 1) + ". " + candy + ".\n"));
-        int ordinal = select(5);
-        candies.add(Candy.byOrdinal(ordinal));
-        increaseWeightAndPrice(ordinal);
+        int ordinal = select(Candy.values().length);
+        addTheSelectedCandy(ordinal);
     }
 
     private static void addCandiesByYourself() {
@@ -99,15 +98,14 @@ public class SelectionMenu {
     private static void addRandom() {
         while (residualCapacity >= 50) {
             int ordinal = (int) (Math.random() * 5 + 1);
-            candies.add(Candy.byOrdinal(ordinal));
-            increaseWeightAndPrice(ordinal);
+            addTheSelectedCandy(ordinal);
         }
     }
 
-    private static void increaseWeightAndPrice(int ordinal) {
+    private static void addTheSelectedCandy(int ordinal) {
+        candies.add(Candy.byOrdinal(ordinal));
         customer.getGift().setWeight(customer.getGift().getWeight() + Candy.byOrdinal(ordinal).getWeight());
         customer.getGift().setPrice(customer.getGift().getPrice() + Candy.byOrdinal(ordinal).getPrice());
         residualCapacity -= Candy.byOrdinal(ordinal).getWeight();
     }
 }
-

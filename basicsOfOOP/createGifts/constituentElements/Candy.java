@@ -17,8 +17,8 @@ public enum Candy implements Type {
         this.price = price;
     }
 
-    public static Candy byOrdinal(int ord) {
-        return Candy.values()[ord - 1];
+    public static Candy byOrdinal(int ordinal) {
+        return Candy.values()[ordinal - 1];
     }
 
     @Override

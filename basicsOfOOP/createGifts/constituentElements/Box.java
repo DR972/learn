@@ -16,8 +16,8 @@ public enum Box implements Type {
         this.price = price;
     }
 
-    public static Box byOrdinal(int ord) {
-        return Box.values()[ord - 1];
+    public static Box byOrdinal(int ordinal) {
+        return Box.values()[ordinal - 1];
     }
 
     @Override

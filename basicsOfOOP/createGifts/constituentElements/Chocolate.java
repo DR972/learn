@@ -17,8 +17,8 @@ public enum Chocolate implements Type {
         this.price = price;
     }
 
-    public static Chocolate byOrdinal(int ord) {
-        return Chocolate.values()[ord - 1];
+    public static Chocolate byOrdinal(int ordinal) {
+        return Chocolate.values()[ordinal - 1];
     }
 
     @Override
