@@ -1,4 +1,4 @@
-package by.epam.learn.main.modul5.createGiftsNew.model;
+package by.epam.learn.main.modul5.createGifts.model;
 
 public interface Type {
     String getName();
