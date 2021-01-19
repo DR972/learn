@@ -1,10 +1,10 @@
-package by.epam.learn.main.modul5.createGifts.factory;
+package by.epam.learn.main.modul5.createGiftsNew.factory;
 
-import by.epam.learn.main.modul5.createGifts.menu.SelectionMenu;
-import by.epam.learn.main.modul5.createGifts.model.Box;
-import by.epam.learn.main.modul5.createGifts.model.Candy;
-import by.epam.learn.main.modul5.createGifts.model.Chocolate;
-import by.epam.learn.main.modul5.createGifts.model.Gift;
+import by.epam.learn.main.modul5.createGiftsNew.menu.SelectionMenu;
+import by.epam.learn.main.modul5.createGiftsNew.model.Box;
+import by.epam.learn.main.modul5.createGiftsNew.model.Candy;
+import by.epam.learn.main.modul5.createGiftsNew.model.Chocolate;
+import by.epam.learn.main.modul5.createGiftsNew.model.Gift;
 
 import java.util.ArrayList;
 
@@ -15,26 +15,27 @@ public class GiftBuilder implements Builder {
         gift = new Gift();
     }
 
-    public Builder withBox(Box box){
+    public Builder buildBox(Box box) {
         gift.setBox(SelectionMenu.selectBox());
         return this;
     }
-    public Builder withChocolate(Chocolate chocolate){
+
+    public Builder buildChocolate(Chocolate chocolate) {
         getGift().setChocolate(SelectionMenu.selectChocolate());
         return this;
     }
 
-    public Builder withCandies(ArrayList<Candy> candies){
-        getGift().setCandies(SelectionMenu.addCandy());
+    public Builder buildCandies(ArrayList<Candy> candies) {
+        getGift().setCandies(SelectionMenu.addCandy(new ArrayList<>()));
         return this;
     }
 
-    public Builder withWeight(int weight){
+    public Builder buildWeight(int weight) {
         getGift().setWeight(gift.getChocolate().getWeight() + gift.getCandies().stream().mapToInt(Candy::getWeight).sum());
         return this;
     }
 
-    public Builder withPrice(double price) {
+    public Builder buildPrice(double price) {
         getGift().setPrice(gift.getBox().getPrice() + gift.getChocolate().getPrice()
                 + gift.getCandies().stream().mapToDouble(Candy::getPrice).sum());
         return this;
@@ -42,5 +43,10 @@ public class GiftBuilder implements Builder {
 
     public Gift getGift() {
         return gift;
+    }
+
+    public Builder buildComplementCandies(ArrayList<Candy> candies) {
+        getGift().setCandies(SelectionMenu.addCandyByCustomer(candies));
+        return this;
     }
 }

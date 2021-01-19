@@ -1,4 +1,4 @@
-package by.epam.learn.main.modul5.createGifts.model;
+package by.epam.learn.main.modul5.createGiftsNew.model;
 
 public class Customer {
     private Gift gift;
