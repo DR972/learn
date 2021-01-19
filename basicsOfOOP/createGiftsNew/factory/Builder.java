@@ -1,9 +1,9 @@
-package by.epam.learn.main.modul5.createGifts.factory;
+package by.epam.learn.main.modul5.createGiftsNew.factory;
 
-import by.epam.learn.main.modul5.createGifts.model.Box;
-import by.epam.learn.main.modul5.createGifts.model.Candy;
-import by.epam.learn.main.modul5.createGifts.model.Chocolate;
-import by.epam.learn.main.modul5.createGifts.model.Gift;
+import by.epam.learn.main.modul5.createGiftsNew.model.Box;
+import by.epam.learn.main.modul5.createGiftsNew.model.Candy;
+import by.epam.learn.main.modul5.createGiftsNew.model.Chocolate;
+import by.epam.learn.main.modul5.createGiftsNew.model.Gift;
 
 import java.util.ArrayList;
 
@@ -12,28 +12,33 @@ public interface Builder {
 
     void createGift();
 
-    default Builder withBox(Box box){
+    default Builder buildBox(Box box) {
         getGift().setBox(box);
         return this;
     }
 
-    default Builder withChocolate(Chocolate chocolate){
+    default Builder buildChocolate(Chocolate chocolate) {
         getGift().setChocolate(chocolate);
         return this;
     }
 
-    default Builder withCandies(ArrayList<Candy> candies){
+    default Builder buildCandies(ArrayList<Candy> candies) {
         getGift().setCandies(candies);
         return this;
     }
 
-    default Builder withWeight(int weight){
+    default Builder buildWeight(int weight) {
         getGift().setWeight(weight);
         return this;
     }
 
-    default Builder withPrice(double price) {
+    default Builder buildPrice(double price) {
         getGift().setPrice(price);
+        return this;
+    }
+
+    default Builder buildComplementCandies(ArrayList<Candy> candies) {
+        getGift().setCandies(candies);
         return this;
     }
 }
