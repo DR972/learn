@@ -1,6 +1,6 @@
-package by.epam.learn.main.modul5.createGiftsNew.factory;
+package by.epam.learn.main.modul5.createGifts.factory;
 
-import by.epam.learn.main.modul5.createGiftsNew.model.Gift;
+import by.epam.learn.main.modul5.createGifts.model.Gift;
 
 public class Director {
     private Builder builder;
@@ -11,18 +11,11 @@ public class Director {
 
     public Gift buildGift() {
         builder.createGift();
-        builder.buildBox(builder.getGift().getBox());
-        builder.buildChocolate(builder.getGift().getChocolate());
-        builder.buildCandies(builder.getGift().getCandies());
-        builder.buildPrice(builder.getGift().getPrice());
-        builder.buildWeight(builder.getGift().getWeight());
-        return builder.getGift();
-    }
-
-    public Gift complementGift() {
-        builder.buildComplementCandies(builder.getGift().getCandies());
-        builder.buildPrice(builder.getGift().getPrice());
-        builder.buildWeight(builder.getGift().getWeight());
+        builder.withBox(builder.getGift().getBox());
+        builder.withChocolate(builder.getGift().getChocolate());
+        builder.withCandies(builder.getGift().getCandies());
+        builder.withPrice(builder.getGift().getPrice());
+        builder.withWeight(builder.getGift().getWeight());
         return builder.getGift();
     }
 }

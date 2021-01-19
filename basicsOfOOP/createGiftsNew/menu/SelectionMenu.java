@@ -1,16 +1,15 @@
-package by.epam.learn.main.modul5.createGiftsNew.menu;
+package by.epam.learn.main.modul5.createGifts.menu;
 
-import by.epam.learn.main.modul5.createGiftsNew.factory.Director;
-import by.epam.learn.main.modul5.createGiftsNew.factory.GiftBuilder;
-import by.epam.learn.main.modul5.createGiftsNew.model.*;
+import by.epam.learn.main.modul5.createGifts.model.*;
+import by.epam.learn.main.modul5.createGifts.factory.GiftBuilder;
+import by.epam.learn.main.modul5.createGifts.factory.Director;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
+import java.util.*;
 import java.util.regex.Pattern;
 
 public class SelectionMenu {
     private static final Customer customer = new Customer();
+    private static final ArrayList<Candy> candies = new ArrayList<>();
     private static int residualCapacity;
 
     public void letsGo() {
@@ -19,7 +18,7 @@ public class SelectionMenu {
         customer.setGift(director.buildGift());
         residualCapacity = customer.getGift().getBox().getWeight() - customer.getGift().getWeight();
         System.out.println(customer.getGift());
-        customer.setGift(director.complementGift());
+        addCandyByCustomer();
         System.out.println(customer.getGift());
         System.out.println("Thank you for your purchase. Have a nice day.");
     }
@@ -48,13 +47,13 @@ public class SelectionMenu {
         return Chocolate.byOrdinal(select(Chocolate.values().length));
     }
 
-    public static ArrayList<Candy> addCandy(ArrayList<Candy> candies) {
+    public static ArrayList<Candy> addCandy() {
         System.out.println("Now add 50 g of each type of candy.");
         candies.addAll(Arrays.asList(Candy.values()));
         return candies;
     }
 
-    public static ArrayList<Candy> addCandyByCustomer(ArrayList<Candy> candies) {
+    private static void addCandyByCustomer() {
         while (residualCapacity >= 50) {
             System.out.println("You can also add " + residualCapacity + " g to this box.");
             System.out.println("\nWhat will we do next?\n" +
@@ -63,56 +62,50 @@ public class SelectionMenu {
                     "3. I myself want to complement the gift.");
             switch (select(3)) {
                 case 1:
-                    return candies;
+                    return;
                 case 2:
-                    addCandiesByYourself(candies);
+                    addCandiesByYourself();
                     break;
                 case 3:
-                    selectCandy(candies);
+                    selectCandy();
                     break;
             }
         }
-        return candies;
     }
 
-    private static ArrayList<Candy> selectCandy(ArrayList<Candy> candies) {
+    private static void selectCandy() {
         System.out.println("\nChoosing a candies:");
         Arrays.asList(Candy.values()).forEach(candy -> System.out.print((candy.ordinal() + 1) + ". " + candy + ".\n"));
         int ordinal = select(Candy.values().length);
-        addTheSelectedCandy(ordinal, candies);
-        return candies;
+        addTheSelectedCandy(ordinal);
     }
 
-    private static ArrayList<Candy> addCandiesByYourself(ArrayList<Candy> candies) {
-        if (residualCapacity >= 250) addAllCandies(candies);
-        else addRandom(candies);
-        return candies;
+    private static void addCandiesByYourself() {
+        if (residualCapacity >= 250) addAllCandies();
+        else addRandom();
     }
 
-    private static ArrayList<Candy> addAllCandies(ArrayList<Candy> candies) {
+    private static void addAllCandies() {
         candies.addAll(Arrays.asList(Candy.values()));
         double price = Arrays.stream(Candy.values()).mapToDouble(Candy::getPrice).sum();
         int weight = Arrays.stream(Candy.values()).mapToInt(Candy::getWeight).sum();
         customer.getGift().setWeight(customer.getGift().getWeight() + weight);
         residualCapacity -= weight;
         customer.getGift().setPrice(customer.getGift().getPrice() + price);
-        addCandiesByYourself(candies);
-        return candies;
+        addCandiesByYourself();
     }
 
-    private static ArrayList<Candy> addRandom(ArrayList<Candy> candies) {
+    private static void addRandom() {
         while (residualCapacity >= 50) {
             int ordinal = (int) (Math.random() * 5 + 1);
-            addTheSelectedCandy(ordinal, candies);
+            addTheSelectedCandy(ordinal);
         }
-        return candies;
     }
 
-    private static ArrayList<Candy> addTheSelectedCandy(int ordinal, ArrayList<Candy> candies) {
+    private static void addTheSelectedCandy(int ordinal) {
         candies.add(Candy.byOrdinal(ordinal));
         customer.getGift().setWeight(customer.getGift().getWeight() + Candy.byOrdinal(ordinal).getWeight());
         customer.getGift().setPrice(customer.getGift().getPrice() + Candy.byOrdinal(ordinal).getPrice());
         residualCapacity -= Candy.byOrdinal(ordinal).getWeight();
-        return candies;
     }
 }

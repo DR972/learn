@@ -1,4 +1,4 @@
-package by.epam.learn.main.modul5.createGiftsNew.model;
+package by.epam.learn.main.modul5.createGifts.model;
 
 public enum Chocolate implements Type {
     CHOCOLATE1("Chocolate1", 500, 5.0),

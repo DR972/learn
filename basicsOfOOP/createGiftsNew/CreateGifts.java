@@ -1,6 +1,6 @@
-package by.epam.learn.main.modul5.createGiftsNew;
+package by.epam.learn.main.modul5.createGifts;
 
-import by.epam.learn.main.modul5.createGiftsNew.menu.SelectionMenu;
+import by.epam.learn.main.modul5.createGifts.menu.SelectionMenu;
 
 /**
  * Создать консольное приложение, удовлетворяющее следующим требованиям:
