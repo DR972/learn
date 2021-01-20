@@ -1,0 +1,108 @@
+Coin - Brasher Doubloon - 1787 doubloon, EB, Brasher's doubloon [USA], Gold - 31050
+Coin - Liberty Head - 1 dollar 1852, Liberty Head [US], Gold - 2140
+Coin - Sovereign - sovereign 1912 [UK], Gold - 570
+Coin - Solid - solid 450, Marcian 450-457 [Byzantine Empire], Gold - 2714
+Coin - Aureus - aureus 198-201, Caracalla [Rome], Gold - 104000
+Coin - Zlatnik - zlatnik 980, Vladimir Svyatoslavich [Kievan Rus], Gold - 470
+Coin - Dinar - dinar 285-300, Ormizd I [Indo-Sassanids / Persia], Gold - 2600
+Coin - Dirham - dirham 1206, Genghis Khan [Great Mongols], Silver - 1470
+Coin - Stater - stater 310-270 BC e. [Carthage], Gold - 2315
+Coin - Loose hair - $ 1 1794, Loose Hair [USA], Silver - 2140
+Coin - Tetradrachm - tetradrachm 126 BC e.-65 N. BC, [Tire Shekel], Silver - 615
+Coin - Denga - denga 1382, Dmitry Donskoy [Grand Duchy of Moscow], Silver - 1028
+Coin - Hoe - 500 cash 10 BC e.[China], copper - 1476
+Coin - Shahrukh - tanka 1405, Shahrukh [Timurid Empire], silver - 512
+Coin - Obodat III - Drachma 15-14 BC BC, Obodat III [Nabataean Kingdom], silver - 248
+Coin - John - ducat 1513 [Order of the Hospitallers (John) on about. Rhodes], gold - 1103
+Coin - Turiasu - denarius 120-20 BC BC, Turiasu [Ancient Spain], silver - 642
+Coin - Andragor - tetradrachm 246-238 BC BC, Andragor [Persian satrapies / Persia], Silver - 10718
+Coin - Half Shekel - 1/2 Shekel 66 [Judea], Silver - 5142
+Coin - Guntamund - nummy 484-496 AD, Guntamund [Kingdom of the Vandals and Alans], Bronze - 213
+Coin - Atrebat - 1/4 stater 75-30 BC BC, Atrebates [Celtic Britain (Britons)], Gold - 715
+Diamond - Heart of Eternity - bright blue, 27.64 carats - 16000000
+Diamond - Perfect Pink - Emerald cut diamond, 14.23 carats - 23200000
+Diamond - Wittelsbach-Graff Diamond - deep blue, 31.06 carats - 23400000
+Diamond - Winston Blue - flawless vivid blue diamond, 13.22 carats - 23800000
+Diamond - Pink Star - the largest diamond of the brand Fancy Vivid Pink, 59.60 ct - 71200000
+Diamond - De Beers Centenary Diamond - Flawless purity, heart-shaped, 273.85 carats - 100000000
+Diamond - Hope Diamond - dark gray-blue, belonged to Louis XIV, 45.52 carats - 350000000
+Diamond - Cullinan - the largest rough diamond in the world weighing 3,106.75 carats - 400000000
+Diamond - Sancy Diamond - pale yellow, owned by French and English kings, 55.23 carats - 800000000
+Diamond - Koh-i-noor - oval diamond adorns the crown of the British queen, 105.60 ct - 1000000000
+Porcelain - Vase - Porcelain Ducks and Waterplants Vase, 17th Century - 1700
+Porcelain - Vase - Chinese Ming Dynasty Wanli Bottle Vase, 17th Century - 999
+Porcelain - Vase - Chinese Porcelain Vase, Qianlong Pot, 17th Century - 1542
+Porcelain - Vase - Antique Chinese Blue and White Porcelain Vase, 17th Century - 850
+Porcelain - Vase - Chinese Black Ground Famille Rose Hexagonal Planter w/Parrots and Fenghuang - 415
+Porcelain - Vase - Antique Chinese Famille Rose Porcelain ginger 18th - 2850
+Porcelain - Vase - Chinese Blue White Porcelain Oriental Scenery Graphic Vase - 750
+Porcelain - Vase - Chinese Famille Rose Porcelain Vase With Mark M3157 - 888
+Porcelain - Vase - Large Chinese Famille Noir Square Faceted Vase - 176
+Porcelain - Vase - Chinese blue and white porcelain baluster vase - 248
+Porcelain - Vase - 11"China Ming Dynasty Blue and white Eight treasures pattern Celestial bottle - 324
+Porcelain - Vase - 14.8" ancient China Qing Dynasty Qianlong Enamel Flower and bird bottle - 477
+Porcelain - Vase - 17.8" China antique the Ming Dynasty Enamel Dragon pattern pulm vase - 756
+Porcelain - Vase - Rare China the Qing dynasty Qianlong Sacrificial red glaze Square bottle - 621
+Porcelain - Vase - China antique Qing Dynasty Qianlong Sacrificial red glaze Through ear bottle - 603
+Porcelain - Vase - 12.4" a pair China antique Qing dynasty Enamel Flower pattern Pipa bottle - 756
+Porcelain - Vase - a pair China The Republic of China Pastel Flower and bird pattern Bottle - 621
+Porcelain - Vase - A Pair Chinese Antique Qing Dynasty kangXi Three colors Porcelain Dragon pot - 550
+Porcelain - Vase - old China antique Qing Dynasty Pastel Flower and bird pattern bottle - 2358
+Porcelain - Vase - 10" a pair China Qing Dynasty Enamel Flower and bird pattern gourd bottle - 441
+Porcelain - Vase - 12.4"China the Qing dynasty Enamel flowers and plants Dragon pattern bottle - 567
+Porcelain - Vase - 18.4" old China the Qing dynasty Enamel Flower pattern Celestial bottle - 1423
+Porcelain - Vase - ancient China Qing Dynasty Carmine Pastel Flower and bird pattern bottle - 2385
+Porcelain - Vase - 12.8" Antique Old Chinese Red Lacquerware Dynasty Palace Flower Bottle Vase Pair - 390
+Porcelain - Vase - 10" a pair China the Qing dynasty Enamel Flowers and birds Garlic bottle - 504
+Porcelain - Vase - 10"a pair China Qing Dynasty Enamel Flower and bird pattern Appreciating bottles - 542
+Porcelain - Vase - 12" China Ming Dynasty Underglaze red Dragon pattern Moon holding bottle - 333
+Porcelain - Vase - 15.6" China antique Qing Dynasty Qianlong Pastel Chicken pattern pulm vase - 1161
+Porcelain - Vase - 11.6"a pair China Qing Dynasty Alum red Dragon pattern Three mouthed bottle - 1350
+Porcelain - Vase - 14.2" a pair China Qing Dynasty Kangxi Multicolored Dragon Garlic bottles - 2430
+Jewelry - Pendant - China Eagle Bird Statue Hong Shan Green Old Jade - 199
+Jewelry - Pendant - Vintage Jade Necklace Green Pink Beads Handmade Craved Hand Knotted 30" - 250
+Jewelry - Pendant - Rare China antique natural Nephrite Hand carving Dragon Jade Pendant - 342
+Jewelry - Pendant - 2.4" old China antique natural Nephrite Hand carving Orcs Pendants - 315
+Jewelry - Pendant - Icy Sun Green Jadeite Jade FUGUA Pendant  - 4400
+Jewelry - Pendant - 2.2" old China antique natural Nephrite Hand carving Flying man statue - 270
+Jewelry - Pendant - ancient China natural Nephrite Hand carving God of wealth Pendants - 360
+Jewelry - Pendant - 4.8" China antique Hand carving natural Nephrite Yuanbao Jade - 252
+Jewelry - Pendant - 2.6" Chinese Old 100% Natural handcarved feicui Jade character Pendant - 684
+Jewelry - Pendant - 4" Rare China antique Hand carving natural Nephrite Pig dragon Pendants - 216
+Jewelry - Pendant - Chinese Natural Hetian Jade Handcarved Exquisite Kwan-yin Pendant - 190
+Jewelry - Pendant - 2.1" ancient China natural Nephrite Hand carving Ruyi pattern Jade - 216
+Jewelry - Pendant - Grade A Emerald Green Jadeite Jade Nine Dragon Pendant - 6300
+Jewelry - Pendant - Chinese Exquisite Hand-carved Longevity God Carving jadeite jade Pendant - 360
+Jewelry - Pendant - Chinese Exquisite Handmade Hetian jade Pendant - 800
+Jewelry - Necklace - Antique Chinese amethyst necklace carved pendant original - 197
+Jewelry - Necklace - Gorgeous Yellow Carved Jade Pendant Necklace - 88
+Jewelry - Necklace - 6" China antique Hand carving natural Nephrite Cicada shape Jade Pendant - 234
+Jewelry - Necklace - Chinese Jade Turtle Carvings With Marks - 895
+Jewelry - Necklace - Chinese Exquisite Handmade jadeite jade - 630
+Jewelry - Necklace - Emerald Green 100% Natural Jade jadeite Pendant Handcarved Flower - 4400
+Jewelry - Necklace - Untreated Garde A Yellow Green Jadeite Jade Fish Lotus - 450
+Jewelry - Necklace - 100% Natural Icy Green Jade Jadeite Grade A Landscape - 6750
+Jewelry - Necklace - Chinese Basemetal Warroir Pendant Necklace - 125
+Jewelry - Necklace - Antique Chinese Late Qing Early Republic 24 1/2" Aventurine Bead Silver Necklace - 650
+Jewelry - Necklace - Chinese Natural Hetian Jade Handmade Exquisite - 129
+Jewelry - Necklace - Antique Qing Dynasty Very Nice Hand Made Beaded Necklace Unique Jewelry - 550
+Jewelry - Necklace - Green Translucent Jadeite 14k Set Buddha - 950
+Armament - Weapon - Antique 19th Century Qing Dynasty Chinese Crossbow Cross Bow to sword - 680
+Armament - Weapon - Antique Wepon Assassing - 500
+Armament - Weapon - Antique Chinese Qing Pole Spear head in Fu Tu Pagoda Shape Bronze Grip - 480
+Armament - Weapon - Antique Tibetan Or Chinese Ceremonial Chopper Axe Made Of Bronze - 785
+Armament - Weapon - China Warring States Period Life Tool Bronze Concave Mirror Take Fire from Sun - 650
+Armament - Weapon - Chinese Handwork Carving Folk Bronze Loong Dragons Hammer Weapon  A pair - 395
+Armament - Weapon - Ancient Chinese Han Dynasty Bronze Cross bow Mechanism Gold Plated  - 750
+Armament - Weapon - Rare Antique Mughal Pale Green Jade Khanjar Hilt-Heavy , 11.065 Ounces - 8500
+Armament - Weapon - Archaic Bronze Chariot Hand Held Bar. Warring States Period - 666
+Armament - Weapon - Two Spiked Iron Mace heads of Song / Liao dynasty Sword breaker actual combat - 450
+Armament - Armor - Asian Antiques China Three Kingdoms General helmet and armor coat clothing - 1800
+Armament - Armor - 27 cm red Bronze Chinese ancient warrior soldier  Hand armour claw - 340
+Armament - Armor - iron Handwork weave Chinese ancient times warfare soldier warrior Armor helmet - 3060
+Armament - Armor - iron Handwork weave Japanese ancient times warfare soldier warrior Armor helmet - 4675
+Armament - Armor - China Ming Dynasty General soldiers Helmet warrior Hat cap - 540
+Armament - Armor - A Pair of Antique Chinese Ming Bronze Stirrups - 390
+Armament - Armor - Chinese Ancient Three countries Zhang Fei General helmet and armor - 1410
+Armament - Armor - Bronze Indonesian Embossed Panel Art Shield Buddha - 80
+Armament - Armor - Old Vintage Antique Chinese 19th Century Brass Shoe Form Single Stirrup Armor - 99
